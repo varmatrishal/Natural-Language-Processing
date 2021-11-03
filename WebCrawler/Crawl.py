@@ -1,6 +1,7 @@
 """
 Name:           Trishal Varma & Angelina Boudro
-Class:          Human Language Technologies
+
+Human Language Technologies
 Objective:      Web Crawling and collecting related websites
 """
 import sys

@@ -1,6 +1,7 @@
 """
 Name:           Trishal Varma
-Class:          Human Language Technologies
+
+Human Language Technologies
 Objective:      Employee Search using python implementing regress, and pickle
 """
 import re

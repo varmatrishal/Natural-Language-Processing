@@ -1,6 +1,8 @@
 """
-Name:           Farzin Amiri, Trishal Varma
-Class:          Human Language Technologies
+Name:           Trishal Varma
+
+Human Language Technologies
+
 Objective:     Creating a Chatbot with webscraped document to give informational responses to the user
 """
 

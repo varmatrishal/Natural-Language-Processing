@@ -1,8 +1,6 @@
 """
 Name:           Trishal Varma
-Date:           September 12th, 2020
 Class:          Human Language Technologies
-Professor:      Karen Mazidi
 Objective:      Using Morphology
 """
 
@@ -50,7 +48,7 @@ for word in important_stemmed_word:
     else:
         stem_dict[word[1]] = [word[0]]
 print("Length of the stem words dict: ", len(stem_dict))
-# lenght of the dictionary
+# length of the dictionary
 
 count = 0
 print("The longest list in from stem words: ")

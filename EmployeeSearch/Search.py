@@ -40,7 +40,7 @@ class Person:
                 tokens[index] = tokens[index][0].upper() + tokens[index][1:] # display of the index length.
             else:
                 tokens[index] = 'NA'
-                # misssing would become NA so can be easily seen.
+                # missing would become NA so can be easily seen.
 
         # ID requirements and pattern set
         id_pat = "^[A-Za-z]{2}[0-9]{4}$"
@@ -53,12 +53,12 @@ class Person:
         # Phone number pattern requirements and pattern set
         phone_pat = "^[0-9]{3}-[0-9]{3}-[0-9]{4}$"
         if not re.match(phone_pat, tokens[4]):
-            tokens[4] = re.sub('[^0-9]', '', tokens[4]) # letters will give error, only numberic
+            tokens[4] = re.sub('[^0-9]', '', tokens[4]) # letters will give error, only numeric
             tokens[4] = ''.join(tokens[4][:3]) + '-' + ''.join(tokens[4][3:6]) + '-' + ''.join(tokens[4][6:])
         return tokens
 
 def main():
-    # Data must be saved in the same directory (if not then specefy)
+    # Data must be saved in the same directory (if not then specify)
     with open('data.csv', 'r') as f:
         data = f.readlines()[1:]  # [1:] Ignores the top header.
 
@@ -75,7 +75,7 @@ def main():
         pickle.dump(persons, file)
         file.close()
 
-    # open picke and verify if crrect
+    # open pike and verify if correct
     with open('persons', 'rb') as file:
         persons = pickle.load(file)
         file.close()

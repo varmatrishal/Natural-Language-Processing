@@ -3,7 +3,7 @@ Name:           Trishal Varma
 
 Human Language Technologies
 
-Objective:     Creating a Chatbot with webscraped document to give informational responses to the user
+Objective:     Creating a Chat bot with web scraped document to give informational responses to the user
 """
 
 
@@ -13,7 +13,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-# this is ashley and I am to provide you with answers for the chatbot, any chatbot
+# this is ashley and I am to provide you with answers for the chat bot, any chat bot
 
 # import necessary libraries
 
@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 
 
 '''
-The Gensim LDA models will give us an idea of topics that we can ask Ashley (Chatbot) about" 
+The Gensim LDA models will give us an idea of topics that we can ask Ashley (Chat bot) about" 
 '''
 
 num_docs = 1
@@ -39,7 +39,7 @@ with open('chatbot.txt', 'r') as f:
     docs.append(doc_chat)
 
 for i in range(num_docs):
-    print("What is a chatbot: \n",docs[i][:80]) # First line displayed from the chatbot.txt read.
+    print("What is a Chat-Bot: \n",docs[i][:80]) # First line displayed from the chat bot.txt read.
 
 from gensim import models, corpora
 from nltk import word_tokenize
@@ -49,7 +49,7 @@ NUM_TOPICS = 5
 # number of topics we are looking for in this document. This can be increased or decreased depending on the topics we
 # have.
 
-# Preprocessing the text form the chatbot.txt
+# Preprocessing the text form the chat bot.txt
 def preprocess(docs, stopwords):
     processed_docs = []
     for doc in docs:
@@ -76,8 +76,8 @@ for i in range(NUM_TOPICS):
     top_words = [t[0] for t in lda_model.show_topic(i,10)]
     print("\nTopics", str(i), ':', top_words)
 
-print("\nThe Gensim LDA model gives us idea of the Topics we could ask the Chatbot about "
-      "ex: Messi, whisky, chatbot")
+print("\nThe Gensim LDA model gives us idea of the Topics we could ask the Chat-bot about "
+      "ex: Messi, whisky, chat-bot")
 
 
 
@@ -99,12 +99,12 @@ nltk.download('wordnet')
 with open('chatbot.txt', 'r', encoding='utf8', errors='ignore') as theFile:
     itIt = theFile.read().lower()
 
-# here we would do the tokenation
+# here we would do the tokenization
 # list of sentences
 sentencesIt = nltk.sent_tokenize(itIt)
 
 
-# this here function checks if there are any keys that already exist in the chatbot
+# this here function checks if there are any keys that already exist in the chat bot
 def checkIt(dict, key):
     if key in dict.keys():
         return True
@@ -184,7 +184,7 @@ def responseToUser(ourInput, name):
 
 indicator = True
 print(
-    "Ashley: My name is Ashley. I will get to know you and answer your questions about any chatbots that you want. "
+    "Ashley: My name is Ashley. I will get to know you and answer your questions about any chat-bots that you want. "
     "If you want to exit, type \"leaving the chatbot\"!")
 
 # this is where the user talks to it

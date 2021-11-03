@@ -1,8 +1,6 @@
 """
 Name:           Trishal Varma
-Date:           September 4th, 2020
-Class:          Human Language Technologies
-Professor:      Karen Mazidi
+Human Language Technologies
 Objective:      Create a Word Guessing Game using library anat19.txt
 """
 import random
@@ -38,7 +36,7 @@ def main():
         print("Error in opening file")
         return
 # Step 2
-    # Reading input as raw text. Calcuated the lexical diversity of the tokenized
+    # Reading input as raw text. Calculated the lexical diversity of the tokenized
     # text.
     file = open("anat19.txt").read()
 
@@ -47,7 +45,7 @@ def main():
     print("\nThe lexical diversity is {:0.2f}".format(num)) #******
 
 # Step 3
-    # A) tokenize lower-case raw text, reduce to only alpha. Length greateer than 5
+    # A) tokenize lower-case raw text, reduce to only alpha. Length greater than 5
     tokens = [t.lower() for t in tokens if t.isalpha() and t not in stopwords.words('english') and len(t)>5]
 
     # B) getting Lemma of tokens using set line 56. unique.
@@ -70,7 +68,7 @@ def main():
 
 
 # Step 4
-    # Dictionry of nouncs and counts, saved in a list ot be used for the game.
+    # Dictionary of nouns and counts, saved in a list ot be used for the game.
     noun = {t:tokens.count(t) for t in tokens}
     nounDict = {}
 
@@ -97,7 +95,7 @@ def main():
         my_list = []
         round += 1
         print("ROUND ", round)
-        # Using _ for blank spaces. as shown in requrement
+        # Using _ for blank spaces. as shown in requirement
         for i in range(len(chosen_word)):
             my_list.append("_")
         print("The answer so far is ", end = "")

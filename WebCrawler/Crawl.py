@@ -1,5 +1,5 @@
 """
-Name:           Trishal Varma & Angelina Boudro
+Name:           Trishal Varma
 
 Human Language Technologies
 Objective:      Web Crawling and collecting related websites

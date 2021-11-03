@@ -88,10 +88,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-    """
-    Name:           Trishal Varma
-    Date:           August 28th, 2020
-    Class:          Human Language Technologies 
-    Professor:      Karen Mazidi
-    Objective:      Employee Search using python implementing regress, and pickle 
-    """
+

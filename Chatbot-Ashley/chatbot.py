@@ -268,15 +268,3 @@ while (indicator == True):
     else:
         indicator = False
         print("Ashley: I\'m leaving I hate you.")
-
-
-"""
-Name:           Farzin Amiri, Trishal Varma 
-Class:          Human Language Technologies
-Objective:     Creating a Chatbot with webscraped document to give informational responses to the user. 
-
-New updated made July 21. 
-"""
-
-
-
